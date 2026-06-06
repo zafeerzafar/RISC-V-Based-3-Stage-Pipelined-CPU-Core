@@ -1,4 +1,4 @@
-# RV32I 3-Stage Pipelined RISC-V Processor
+<img width="876" height="553" alt="image" src="https://github.com/user-attachments/assets/4548f1e2-22db-4c62-ac98-fed246ae91a0" /># RV32I 3-Stage Pipelined RISC-V Processor
 
 A 32-bit RISC-V processor implemented in SystemVerilog featuring a custom 3-stage pipeline architecture, support for major RV32I instruction formats, simulation-based verification, and successful deployment on FPGA hardware.
 
@@ -189,9 +189,6 @@ The processor uses a three-stage pipeline to improve instruction throughput.
                   Register File
 ```
 
-> **Note:** Replace this diagram with an actual datapath image in `/docs/datapath.png` for better visualization.
-
----
 
 ## FPGA Implementation
 
