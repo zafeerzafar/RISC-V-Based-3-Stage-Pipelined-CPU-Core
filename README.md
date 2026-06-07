@@ -159,6 +159,11 @@ The processor uses a three-stage pipeline to improve instruction throughput.
 
 ### High-Level Datapath
 
+<img width="876" height="553" alt="image" src="https://github.com/user-attachments/assets/4548f1e2-22db-4c62-ac98-fed246ae91a0" />
+
+# RV32I 3-Stage Pipelined RISC-V Processor
+
+
 ```text
                  ┌────────────────┐
                  │ Instruction    │
@@ -186,8 +191,6 @@ The processor uses a three-stage pipeline to improve instruction throughput.
                         ▼
                   Register File
 ```
-<img width="876" height="553" alt="image" src="https://github.com/user-attachments/assets/4548f1e2-22db-4c62-ac98-fed246ae91a0" /># RV32I 3-Stage Pipelined RISC-V Processor
-
 
 ## FPGA Implementation
 
