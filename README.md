@@ -160,8 +160,7 @@ The processor uses a three-stage pipeline to improve instruction throughput.
 ### High-Level Datapath
 
 <img width="876" height="553" alt="image" src="https://github.com/user-attachments/assets/4548f1e2-22db-4c62-ac98-fed246ae91a0" />
-
-# RV32I 3-Stage Pipelined RISC-V Processor
+### RV32I 3-Stage Pipelined RISC-V Processor
 
 
 ```text
@@ -261,34 +260,40 @@ After simulation verification:
 ```text
 .
 ├── rtl/
-│   ├── processor_top.sv
-│   ├── program_counter.sv
-│   ├── instruction_memory.sv
-│   ├── data_memory.sv
-│   ├── register_file.sv
-│   ├── control_unit.sv
-│   ├── alu.sv
-│   ├── immediate_generator.sv
-│   ├── pipeline_registers.sv
-│   ├── seven_segment_driver.sv
-│   └── ...
+│   ├── ALU.sv
+│   ├── Branch.sv
+│   ├── Branch_Reg.sv
+│   ├── clk_freq_divider.sv
+│   ├── Control_Reg.sv
+│   ├── Controller.sv
+│   ├── data_decoder.sv
+│   ├── DataMemory.sv
+│   ├── DataPath.sv
+│   ├── Decode_Execute_Reg.sv
+│   └── Fetch_Reg.sv
+│   ├── Fordward_Stall_Unit.sv
+│   ├── ImmediateGen.sv
+│   ├── In_Mem.sv
+│   ├── load_store_unit.sv
+│   ├── mux8x1.sv
+│   ├── Program_counter.sv
+│   ├── Reg_File.sv
+│   ├── seg_decoder.sv
+│   ├── selection.sv
+│   ├── Seven_Seg_Display.sv
+│   └── Three_stage_Pipeline.sv
 │
 ├── tb/
-│   └── processor_tb.sv
+│   └── Three_stage_Pipeline.sv
 │
 ├── programs/
-│   └── test_program.mem
-│
-├── constraints/
-│   └── fpga_constraints.xdc
-│
-├── docs/
-│   ├── datapath.png
-│   ├── pipeline_diagram.png
-│   ├── simulation_waveform.png
-│   ├── fpga_demo.jpg
-│   └── ...
-│
+│   └── imem.txt
+|
+├── memories
+│   ├── Data_Memory.txt
+│   ├── register_File.txt
+|   └── Register_file.mem
+|
 └── README.md
 ```
 
@@ -427,8 +432,3 @@ Embedded Systems & FPGA Engineer
 - Embedded Systems
 
 ---
-
-## License
-
-This project is licensed under the MIT License.# RISC-V-Based-3-Stage-Pipelined-CPU-Core
-A 32-bit RISC-V processor implemented in SystemVerilog featuring a custom 3-stage pipeline architecture, support for major RV32I instruction formats, simulation-based verification, and successful deployment on FPGA hardware.
