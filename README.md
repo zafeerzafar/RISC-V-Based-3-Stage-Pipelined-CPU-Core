@@ -270,7 +270,7 @@ After simulation verification:
 │   ├── DataMemory.sv
 │   ├── DataPath.sv
 │   ├── Decode_Execute_Reg.sv
-│   └── Fetch_Reg.sv
+│   ├── Fetch_Reg.sv
 │   ├── Fordward_Stall_Unit.sv
 │   ├── ImmediateGen.sv
 │   ├── In_Mem.sv
@@ -384,24 +384,6 @@ Observing processor state on hardware can be challenging. The seven-segment disp
 
 ---
 
-## Future Improvements
-
-Potential future enhancements include:
-
-- Full RV32I instruction support
-- Data forwarding network
-- Hazard detection unit
-- Pipeline stalling logic
-- Branch prediction
-- RV32M multiplication/division extension
-- CSR support
-- Interrupt and exception handling
-- AXI-based memory interfaces
-- UART debugging interface
-- Performance counters
-
----
-
 ## Skills Demonstrated
 
 This project demonstrates practical experience in:
@@ -412,10 +394,8 @@ This project demonstrates practical experience in:
 - Pipeline Design
 - RTL Development
 - SystemVerilog
-- FPGA Design
+- Logic Verification on FPGA
 - Digital Logic Design
-- Hardware Verification
-- FPGA Bring-Up and Debugging
 
 ---
 
